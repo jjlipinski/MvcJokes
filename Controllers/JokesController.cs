@@ -1,4 +1,5 @@
 using System;
+using System.Text.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -36,6 +37,20 @@ namespace MvcJokes.Controllers
             }
 
             return View(await jokes.ToListAsync());
+        }
+
+        // GET: Jokes, as JSON
+        public async Task<String> RawData()
+        {
+            if(_context.Joke == null)
+            {
+                return "Null error";
+            }
+
+            var jokes = from m in _context.Joke
+            select m;
+
+            return JsonSerializer.Serialize(await jokes.ToListAsync());
         }
 
         // GET: Jokes/Details/5

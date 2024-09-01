@@ -6,6 +6,7 @@ namespace MvcJokes.Models;
 
 public class Joke
 {
+    [Display(Name = "ID")]
     public int Id { get; set; }
 
     [Display(Name = "Joke Question")]

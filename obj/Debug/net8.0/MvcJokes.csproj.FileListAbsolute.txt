@@ -275,3 +275,4 @@
 /Users/jessicalipinski/Source/Repos/MvcJokes/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
 /Users/jessicalipinski/Source/Repos/MvcJokes/obj/Debug/net8.0/MvcJokes.csproj.AssemblyReference.cache
 /Users/jessicalipinski/Source/Repos/MvcJokes/obj/Debug/net8.0/MvcJokes.csproj.Up2Date
+/Users/jessicalipinski/Source/Repos/MvcJokes/obj/Debug/net8.0/MvcJokes.sourcelink.json
