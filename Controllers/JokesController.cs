@@ -114,7 +114,7 @@ namespace MvcJokes.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,JokeQuestion,JokeAnswer, JokeRating")] Joke joke)
         {
             if (id != joke.Id)
             {

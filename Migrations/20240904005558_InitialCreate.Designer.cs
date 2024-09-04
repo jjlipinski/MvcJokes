@@ -10,7 +10,7 @@ using MvcJoke.Data;
 namespace MvcJokes.Migrations
 {
     [DbContext(typeof(MvcJokeContext))]
-    [Migration("20240901234144_InitialCreate")]
+    [Migration("20240904005558_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
