@@ -9,12 +9,12 @@ public class Joke
     [Display(Name = "ID")]
     public int Id { get; set; }
 
-    [Display(Name = "Joke Question")]
+    [StringLength(60), Required, Display(Name = "Joke Question")]
     public string? JokeQuestion { get; set; }
 
-    [Display(Name = "Joke Answer")]
+    [StringLength(60), Required, Display(Name = "Joke Answer")]
     public string? JokeAnswer { get; set; }
 
-    [Display(Name = "Joke Rating")]
+    [StringLength(10), Display(Name = "Joke Rating")]
     public string? JokeRating { get; set; }
 }
